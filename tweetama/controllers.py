@@ -5,6 +5,9 @@ from flask import render_template, url_for, redirect, send_from_directory
 
 from tweetama import app
 
+# Twitter Auth:
+from tweetama import auth
+
 # app controllers
 @app.route('/')
 def index():
