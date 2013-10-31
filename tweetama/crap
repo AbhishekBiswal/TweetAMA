@@ -1,0 +1,12 @@
+@app.route("/test/<username>")
+def profile(username):
+	#check if user exists in database.
+	#check = User.query.filter_by(username=username)
+	check = 1
+	if check is None:
+		return "404"
+	userData = t.GetUser(screen_name=username)
+	query = "@"+userData['screen_name']+" #ama"
+	#tweets = t.search.tweets(q=query, count=10)
+	#return str(tweets)
+	#return render_template("profile.html", user=userData)

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3 class="bigtext">Create an AMA</h3>
+
+<form class="ui form" method="post" action="/create/sub">
+	
+	<textarea name="bio" placeholder="Write something about yourself so that people can get to know about you before they ask you a question. Please be brief."></textarea>
+	<br>
+	<input type="submit" value="Create" class="ui button fluid teal">
+
+</form>
+
+
+{% endblock %}

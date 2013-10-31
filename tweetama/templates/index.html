@@ -1,6 +1,15 @@
 {% extends "base.html" %}
+{% block header %}
+	<center><h2>TweetAMA allows you to start an 'Ask Me Anything' on Twitter. Let your followers ask you questions in form of 140 character tweets.</h2></center>
+{% endblock %}
+
 {% block content %}
 
-	<a href="#" class="ui button twitter"><i class="twitter icon"></i>Login via Twitter</a>
+<div class="wrap">
+	<br>
+	<center><h3>To start an AMA, Login via Twitter to create an AMA profile so that other people can find you.</h3></center>
+	<center><a href="/login" class="ui button twitter"><i class="twitter icon"></i>Login via Twitter</a></center>
+
+</div>
 
 {% endblock %}

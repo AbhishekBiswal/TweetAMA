@@ -35,9 +35,15 @@
 	<div id="header">
 		<h1>#TweetAMA</h1>
 	</div>
+	<div id="intro">
+	<div class="wrap">
+		{% block header %}
+		{% endblock %}
+	</div>
+	</div>
 
 	<div class="container page">
-		<div class="content main">
+		<div class="content main wrap">
 		  {% block content %}
 		  {% endblock %}
 		</div>
